@@ -4,4 +4,7 @@ description: 'News functionality for Faith Genesis platform.'
 core: 8.x
 package: 'Custom'
 dependencies:
+  - default_content
   - faith_genesis_core
+  - metatag
+  - scheduler
