@@ -1,0 +1,30 @@
+name: 'Faith genesis core'
+type: module
+description: 'Core functionality for Faith Genesis platform.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:layout_discovery
+install:
+  - admin_toolbar
+  - admin_toolbar_tools
+  - block_content
+  - ctools
+  - dynamic_layouts
+  - editor
+  - field_layout
+  - field_ui
+  - filter
+  - help
+  - inline_form_errors
+  - layout_builder
+  - media
+  - media_library
+  - menu_link_content
+  - menu_ui
+  - path
+  - search
+  - taxonomy
+  - toolbar
+  - views
+  - views_ui
