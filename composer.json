@@ -1,5 +1,5 @@
 {
-  "name": "drupal/faith_genesis_core",
+  "name": "faithcatholic/faith_genesis_core",
   "type": "drupal-module",
   "description": "Core functionality for Faith Genesis platform.",
   "keywords": ["Drupal"],

@@ -1,5 +1,5 @@
 {
-  "name": "drupal/faith_genesis_news",
+  "name": "faithcatholic/faith_genesis_news",
   "type": "drupal-module",
   "description": "News functionality for Faith Genesis platform.",
   "keywords": ["Drupal"],

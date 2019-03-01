@@ -1,5 +1,5 @@
 {
-  "name": "drupal/faith_genesis_job",
+  "name": "faithcatholic/faith_genesis_job",
   "type": "drupal-module",
   "description": "Job functionality for Faith Genesis platform.",
   "keywords": ["Drupal"],

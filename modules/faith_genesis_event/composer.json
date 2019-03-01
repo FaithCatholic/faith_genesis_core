@@ -1,5 +1,5 @@
 {
-  "name": "drupal/faith_genesis_event",
+  "name": "faithcatholic/faith_genesis_event",
   "type": "drupal-module",
   "description": "Event functionality for Faith Genesis platform.",
   "keywords": ["Drupal"],
