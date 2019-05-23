@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains faith_genesis_box.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function faith_genesis_box_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the faith_genesis_box module.
+    case 'help.page.faith_genesis_box':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function faith_genesis_box_theme() {
+  $theme = [];
+  $theme['box'] = [
+    'render element' => 'elements',
+    'file' => 'box.page.inc',
+    'template' => 'box',
+  ];
+  $theme['box_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'box.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function faith_genesis_box_theme_suggestions_box(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#box'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'box__' . $sanitized_view_mode;
+  $suggestions[] = 'box__' . $entity->bundle();
+  $suggestions[] = 'box__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'box__' . $entity->id();
+  $suggestions[] = 'box__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

@@ -1,0 +1,11 @@
+entity.box.add_form:
+  route_name: entity.box.add_page
+  title: 'Add Box'
+  appears_on:
+    - entity.box.collection
+entity.box_type.add_form:
+  route_name: entity.box_type.add_form
+  title: 'Add Box type'
+  appears_on:
+    - entity.box_type.collection
+

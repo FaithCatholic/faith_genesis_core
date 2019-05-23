@@ -1,0 +1,12 @@
+faith_genesis_box.box_type.*:
+  type: config_entity
+  label: 'Box type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

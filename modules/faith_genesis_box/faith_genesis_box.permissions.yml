@@ -1,0 +1,19 @@
+add box entities:
+  title: 'Create new box entities'
+
+administer box entities:
+  title: 'Administer box entities'
+  description: 'Allow to access the administration form to configure box entities.'
+  restrict access: true
+
+delete box entities:
+  title: 'Delete box entities'
+
+edit box entities:
+  title: 'Edit box entities'
+
+view published box entities:
+  title: 'View published box entities'
+
+view unpublished box entities:
+  title: 'View unpublished box entities'
