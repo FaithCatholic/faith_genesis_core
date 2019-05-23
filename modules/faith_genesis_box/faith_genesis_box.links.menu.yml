@@ -1,18 +1,17 @@
-
-# Box menu items definition
-entity.box.collection:
-  title: 'Box list'
-  route_name: entity.box.collection
-  description: 'List Box entities'
-  parent: system.admin_structure
-  weight: 100
-
-
-# Box type menu items definition
 entity.box_type.collection:
-  title: 'Box type'
-  route_name: entity.box_type.collection
-  description: 'List Box type (bundles)'
+  title: 'Box types'
   parent: system.admin_structure
-  weight: 99
+  description: 'Manage box types.'
+  route_name: entity.box_type.collection
 
+entity.box.collection:
+  title: 'Add box'
+  parent: system.admin_content
+  description: 'Manage box content.'
+  route_name: entity.box.collection
+
+entity.box.add:
+ title: 'Add box'
+ parent: entity.box.collection
+ description: 'Box.'
+ route_name: entity.box.add_page

@@ -11,9 +11,3 @@ delete box entities:
 
 edit box entities:
   title: 'Edit box entities'
-
-view published box entities:
-  title: 'View published box entities'
-
-view unpublished box entities:
-  title: 'View unpublished box entities'

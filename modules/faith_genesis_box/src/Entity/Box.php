@@ -42,11 +42,10 @@ use Drupal\user\UserInterface;
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
- *     "label" = "name",
+ *     "label" = "label",
  *     "uuid" = "uuid",
  *     "uid" = "user_id",
  *     "langcode" = "langcode",
- *     "status" = "status",
  *   },
  *   links = {
  *     "canonical" = "/box/{box}",
@@ -54,7 +53,7 @@ use Drupal\user\UserInterface;
  *     "add-form" = "/box/add/{box_type}",
  *     "edit-form" = "/box/{box}/edit",
  *     "delete-form" = "/box/{box}/delete",
- *     "collection" = "/admin/structure/box",
+ *     "collection" = "/admin/content/box",
  *   },
  *   bundle_entity_type = "box_type",
  *   field_ui_base_route = "entity.box_type.edit_form"
@@ -77,15 +76,15 @@ class Box extends ContentEntityBase implements BoxInterface {
   /**
    * {@inheritdoc}
    */
-  public function getName() {
-    return $this->get('name')->value;
+  public function getLabel() {
+    return $this->get('label')->value;
   }
 
   /**
    * {@inheritdoc}
    */
-  public function setName($name) {
-    $this->set('name', $name);
+  public function setLabel($label) {
+    $this->set('label', $label);
     return $this;
   }
 
@@ -137,21 +136,6 @@ class Box extends ContentEntityBase implements BoxInterface {
   /**
    * {@inheritdoc}
    */
-  public function isPublished() {
-    return (bool) $this->getEntityKey('status');
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setPublished($published) {
-    $this->set('status', $published ? TRUE : FALSE);
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
 
@@ -180,9 +164,9 @@ class Box extends ContentEntityBase implements BoxInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
-    $fields['name'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Box entity.'))
+    $fields['label'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Label'))
+      ->setDescription(t('Used internally for identification.'))
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -200,15 +184,6 @@ class Box extends ContentEntityBase implements BoxInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
-
-    $fields['status'] = BaseFieldDefinition::create('boolean')
-      ->setLabel(t('Publishing status'))
-      ->setDescription(t('A boolean indicating whether the Box is published.'))
-      ->setDefaultValue(TRUE)
-      ->setDisplayOptions('form', [
-        'type' => 'boolean_checkbox',
-        'weight' => -3,
-      ]);
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))

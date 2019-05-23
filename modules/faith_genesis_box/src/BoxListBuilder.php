@@ -19,7 +19,7 @@ class BoxListBuilder extends EntityListBuilder {
    */
   public function buildHeader() {
     $header['id'] = $this->t('Box ID');
-    $header['name'] = $this->t('Name');
+    $header['label'] = $this->t('Label');
     return $header + parent::buildHeader();
   }
 
@@ -29,7 +29,7 @@ class BoxListBuilder extends EntityListBuilder {
   public function buildRow(EntityInterface $entity) {
     /* @var $entity \Drupal\faith_genesis_box\Entity\Box */
     $row['id'] = $entity->id();
-    $row['name'] = Link::createFromRoute(
+    $row['label'] = Link::createFromRoute(
       $entity->label(),
       'entity.box.edit_form',
       ['box' => $entity->id()]

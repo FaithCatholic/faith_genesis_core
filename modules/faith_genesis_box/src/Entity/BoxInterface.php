@@ -21,7 +21,7 @@ interface BoxInterface extends ContentEntityInterface, EntityChangedInterface, E
    * @return string
    *   Name of the Box.
    */
-  public function getName();
+  public function getLabel();
 
   /**
    * Sets the Box name.
@@ -32,7 +32,7 @@ interface BoxInterface extends ContentEntityInterface, EntityChangedInterface, E
    * @return \Drupal\faith_genesis_box\Entity\BoxInterface
    *   The called Box entity.
    */
-  public function setName($name);
+  public function setLabel($label);
 
   /**
    * Gets the Box creation timestamp.
@@ -52,26 +52,5 @@ interface BoxInterface extends ContentEntityInterface, EntityChangedInterface, E
    *   The called Box entity.
    */
   public function setCreatedTime($timestamp);
-
-  /**
-   * Returns the Box published status indicator.
-   *
-   * Unpublished Box are only visible to restricted users.
-   *
-   * @return bool
-   *   TRUE if the Box is published.
-   */
-  public function isPublished();
-
-  /**
-   * Sets the published status of a Box.
-   *
-   * @param bool $published
-   *   TRUE to set this Box to published, FALSE to set it to unpublished.
-   *
-   * @return \Drupal\faith_genesis_box\Entity\BoxInterface
-   *   The called Box entity.
-   */
-  public function setPublished($published);
 
 }
