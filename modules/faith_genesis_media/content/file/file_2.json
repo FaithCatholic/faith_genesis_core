@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2019-05\/beach_sunset.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 2
+        }
+    ],
+    "uuid": [
+        {
+            "value": "0a3a9d81-043f-4ce9-8eb6-f66c233cea97"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2cf3a2ba-d049-4927-b9b8-cfadccfd477d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "beach_sunset.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2019-05\/beach_sunset.jpg",
+            "url": "\/sites\/default\/files\/2019-05\/beach_sunset.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 247685
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-05-31T14:36:48+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-05-31T14:36:57+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

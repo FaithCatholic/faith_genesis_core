@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2019-05\/red_square.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 5
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9341c2b3-c549-4d4b-b70f-3eeb83dde987"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2cf3a2ba-d049-4927-b9b8-cfadccfd477d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "red_square.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2019-05\/red_square.jpg",
+            "url": "\/sites\/default\/files\/2019-05\/red_square.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 10728
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-05-31T15:51:39+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-05-31T15:51:45+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2019-06\/twitter-letter-logo.svg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 25
+        }
+    ],
+    "uuid": [
+        {
+            "value": "49c1410c-8230-4fa8-a454-30b62e52485a"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2cf3a2ba-d049-4927-b9b8-cfadccfd477d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "twitter-letter-logo.svg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2019-06\/twitter-letter-logo.svg",
+            "url": "\/sites\/default\/files\/2019-06\/twitter-letter-logo.svg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/svg+xml"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 1318
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-04T23:13:21+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-06-04T23:13:28+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sites\/default\/files\/2019-06\/orange_blue.jpg"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 11
+        }
+    ],
+    "uuid": [
+        {
+            "value": "40e48fb4-154a-4f07-b417-2a8db00f06fc"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/file\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "2cf3a2ba-d049-4927-b9b8-cfadccfd477d"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "orange_blue.jpg"
+        }
+    ],
+    "uri": [
+        {
+            "value": "public:\/\/2019-06\/orange_blue.jpg",
+            "url": "\/sites\/default\/files\/2019-06\/orange_blue.jpg"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "image\/jpeg"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 48435
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-06-02T18:28:51+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-06-02T18:28:58+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ]
+}
