@@ -17,6 +17,11 @@
             "value": "344dd3aa-4952-4689-9364-0b4ff6d5e4fd"
         }
     ],
+    "revision_id": [
+        {
+            "value": 4
+        }
+    ],
     "langcode": [
         {
             "value": "en",
@@ -26,6 +31,12 @@
     "bundle": [
         {
             "value": "menu_link_content"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-05-31T13:59:33+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "enabled": [
@@ -89,11 +100,17 @@
             "lang": "en"
         }
     ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
     "metatag": [
         {
             "value": {
                 "title": "| Genesis",
-                "canonical_url": "http:\/\/default\/node\/1"
+                "canonical_url": "http:\/\/default\/node\/7"
             }
         }
     ]

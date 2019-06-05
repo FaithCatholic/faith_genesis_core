@@ -1,7 +1,7 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/admin\/structure\/menu\/item\/6\/edit?_format=hal_json"
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/10\/edit?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
@@ -9,17 +9,17 @@
     },
     "id": [
         {
-            "value": 6
+            "value": 10
         }
     ],
     "uuid": [
         {
-            "value": "1b0364c9-3f13-4b8b-807d-c73e65b31f02"
+            "value": "d543b651-68f1-4ea2-88b7-be8c1cdd0996"
         }
     ],
     "revision_id": [
         {
-            "value": 6
+            "value": 10
         }
     ],
     "langcode": [
@@ -35,18 +35,18 @@
     ],
     "revision_created": [
         {
-            "value": "2019-05-31T15:47:53+00:00",
+            "value": "2019-06-04T23:56:12+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "enabled": [
         {
-            "value": false
+            "value": true
         }
     ],
     "title": [
         {
-            "value": "Landing",
+            "value": "News",
             "lang": "en"
         }
     ],
@@ -57,8 +57,8 @@
     ],
     "link": [
         {
-            "uri": "entity:node\/4",
-            "title": null,
+            "uri": "entity:node\/11",
+            "title": "",
             "options": []
         }
     ],
@@ -74,7 +74,7 @@
     ],
     "weight": [
         {
-            "value": -49
+            "value": 0
         }
     ],
     "expanded": [
@@ -84,7 +84,7 @@
     ],
     "changed": [
         {
-            "value": "2019-05-31T15:49:31+00:00",
+            "value": "2019-06-04T23:56:12+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -105,7 +105,7 @@
         {
             "value": {
                 "title": "| Genesis",
-                "canonical_url": "http:\/\/default\/node\/4"
+                "canonical_url": "http:\/\/default\/node\/7"
             }
         }
     ]

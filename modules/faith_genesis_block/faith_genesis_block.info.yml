@@ -1,0 +1,8 @@
+name: 'Faith genesis block'
+type: module
+description: 'Provides various block types.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - default_content
+  - faith_genesis_core

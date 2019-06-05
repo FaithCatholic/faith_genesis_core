@@ -1,0 +1,14 @@
+{
+  "name": "faithcatholic/faith_genesis_block",
+  "type": "drupal-module",
+  "description": "Provides various block types.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/faith_genesis_block",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/faith_genesis_block",
+    "source": "http://cgit.drupalcode.org/faith_genesis_block"
+  },
+  "require": { }
+}
