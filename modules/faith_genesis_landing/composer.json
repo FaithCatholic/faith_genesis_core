@@ -1,0 +1,14 @@
+{
+  "name": "faithcatholic/faith_genesis_landing",
+  "type": "drupal-module",
+  "description": "Landing functionality for Faith Genesis platform.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/faith_genesis_landing",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/faith_genesis_landing",
+    "source": "http://cgit.drupalcode.org/faith_genesis_landing"
+  },
+  "require": { }
+}
