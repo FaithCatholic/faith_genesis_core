@@ -9,7 +9,6 @@ dependencies:
   - entity_reference_revisions
   - faith_genesis_core
   - faith_genesis_media
-  - faith_genesis_page
   - field_group
   - field_layout
   - file

@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.event
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_revisions
+id: node.event.field_banner
+field_name: field_banner
+entity_type: node
+bundle: event
+label: Banner
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 8
+      card:
+        weight: 9
+        enabled: false
+      cards:
+        weight: 10
+        enabled: false
+      heading:
+        weight: 11
+        enabled: false
+      section:
+        weight: 12
+        enabled: false
+      subpages:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

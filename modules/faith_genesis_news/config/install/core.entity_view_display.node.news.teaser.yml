@@ -2,12 +2,161 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.news.title
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_image
     - node.type.news
   module:
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 33-67
+        components:
+          4828f2bd-bf1a-4fa8-a098-d1d2b97581a1:
+            uuid: 4828f2bd-bf1a-4fa8-a098-d1d2b97581a1
+            region: second
+            configuration:
+              id: 'field_block:node:news:title'
+              label: Headline
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: true
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+          3531d9b6-1d12-4c1c-ba54-b98282a79a65:
+            uuid: 3531d9b6-1d12-4c1c-ba54-b98282a79a65
+            region: second
+            configuration:
+              id: 'field_block:node:news:created'
+              label: 'Authored on'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: timestamp
+                settings:
+                  date_format: short
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          172a2c71-4f4e-4f97-948d-64ccf171dbf6:
+            uuid: 172a2c71-4f4e-4f97-948d-64ccf171dbf6
+            region: second
+            configuration:
+              id: 'field_block:node:news:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 300
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          251bc555-e382-4efb-9ba2-76626190bcbe:
+            uuid: 251bc555-e382-4efb-9ba2-76626190bcbe
+            region: first
+            configuration:
+              id: 'field_block:node:news:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: media_thumbnail
+                settings:
+                  image_style: large
+                  image_link: content
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.news.teaser
 targetEntityType: node
 bundle: news
@@ -26,4 +175,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_image: true

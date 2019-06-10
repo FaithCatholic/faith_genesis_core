@@ -1,0 +1,53 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.landing
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+id: node.landing.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: landing
+label: 'Landing components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+      section: section
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 9
+      blockquote:
+        weight: 10
+        enabled: false
+      card:
+        weight: 11
+        enabled: false
+      cards:
+        weight: 12
+        enabled: false
+      heading:
+        weight: 13
+        enabled: false
+      section:
+        enabled: true
+        weight: 14
+      subpages:
+        weight: 15
+        enabled: false
+      text:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

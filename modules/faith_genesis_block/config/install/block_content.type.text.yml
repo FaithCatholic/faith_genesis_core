@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: 'Formatted text'
+revision: 0
+description: 'Fully-formatted HTML text.'

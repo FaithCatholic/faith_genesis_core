@@ -3,37 +3,57 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.layout_builder__layout
+    - field.field.node.page.field_banner
+    - field.field.node.page.field_image
     - node.type.page
   module:
+    - entity_reference_revisions
     - layout_builder
     - layout_discovery
     - text
     - user
 third_party_settings:
   layout_builder:
+    allow_custom: false
+    enabled: true
     sections:
       -
         layout_id: layout_onecol
         layout_settings: {  }
         components:
-          8b78e1b0-2504-4698-be29-19a739380c70:
-            uuid: 8b78e1b0-2504-4698-be29-19a739380c70
+          1b720736-df68-47d0-8770-563a694922fb:
+            uuid: 1b720736-df68-47d0-8770-563a694922fb
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:page:body'
+              label: Body
+              provider: layout_builder
+              label_display: '0'
               formatter:
                 label: hidden
                 type: text_default
                 settings: {  }
-                third_party_settings: {  }
+                third_party_settings:
+                  linked_field:
+                    linked: 0
+                    type: custom
+                    destination:
+                      field:
+                        field: ''
+                        custom:
+                          custom: ''
+                      custom: ''
+                    advanced:
+                      title: ''
+                      target: ''
+                      class: ''
+                      rel: ''
+                      text: ''
+              context_mapping:
+                entity: layout_builder.entity
             additional: {  }
-            weight: 1
-    allow_custom: true
-    enabled: true
+            weight: 0
+        third_party_settings: {  }
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -42,14 +62,28 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
-    settings: {  }
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
 hidden:
   layout_builder__layout: true
+  links: true

@@ -4,6 +4,8 @@ description: 'Core functionality for Faith Genesis platform.'
 core: 8.x
 package: 'Custom'
 dependencies:
+  - address
+  - datetime_range
   - field_layout
   - layout_builder
   - menu_ui

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: components
+label: 'Layout components'
+revision: 0
+description: 'Complex content components.'

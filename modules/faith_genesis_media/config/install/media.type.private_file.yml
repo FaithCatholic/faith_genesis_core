@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: private_file
+label: 'Private file'
+description: 'Use a <em>private file</em> for private-only reusable media.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_1
+field_map: {  }

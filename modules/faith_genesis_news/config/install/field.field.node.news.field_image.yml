@@ -2,23 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_subpages
-    - paragraphs.paragraphs_type.subpages
-id: paragraph.subpages.field_subpages
-field_name: field_subpages
-entity_type: paragraph
-bundle: subpages
-label: Subpages
+    - field.storage.node.field_image
+    - media.type.image
+    - node.type.news
+id: node.news.field_image
+field_name: field_image
+entity_type: node
+bundle: news
+label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:media'
   handler_settings:
     target_bundles:
-      page: page
+      image: image
     sort:
       field: _none
     auto_create: false
