@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_longform
+    - paragraphs.paragraphs_type.heading
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    simple: simple
+    full: '0'
+    plain_text: '0'
+id: paragraph.heading.field_text_longform
+field_name: field_text_longform
+entity_type: paragraph
+bundle: heading
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

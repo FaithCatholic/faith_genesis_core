@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_viewmode
+id: section
+label: Section
+icon_uuid: null
+description: ''
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    enabled: true
+    override_mode: default
+    override_available:
+      default: default
+      deflated: deflated
+      inflated: inflated
+      block: '0'
+      box: '0'
+      boxes: '0'
+      mini: '0'
+      preview: '0'
+      skinny: '0'
+      small: '0'
+    override_default: default

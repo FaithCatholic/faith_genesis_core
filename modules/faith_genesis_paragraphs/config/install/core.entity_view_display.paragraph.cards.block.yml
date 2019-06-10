@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.block
+    - field.field.paragraph.cards.field_cards
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.cards.block
+targetEntityType: paragraph
+bundle: cards
+mode: block
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: block
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

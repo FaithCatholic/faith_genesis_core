@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.inflated
+    - field.field.paragraph.section.field_bgcolor
+    - field.field.paragraph.section.field_bgimage
+    - field.field.paragraph.section.field_paragraphs
+    - field.field.paragraph.section.field_txtcolor
+    - paragraphs.paragraphs_type.section
+  module:
+    - color_field
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.section.inflated
+targetEntityType: paragraph
+bundle: section
+mode: inflated
+content:
+  field_bgcolor:
+    type: color_field_formatter_text
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+  field_bgimage:
+    type: entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_txtcolor:
+    type: color_field_formatter_text
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+hidden: {  }
