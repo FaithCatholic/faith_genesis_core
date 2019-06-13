@@ -5,6 +5,7 @@ core: 8.x
 package: 'Custom'
 dependencies:
   - address
+  - daterange_compact
   - datetime_range
   - faith_genesis_core
   - faith_genesis_paragraphs
