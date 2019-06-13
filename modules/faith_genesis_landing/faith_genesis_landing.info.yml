@@ -7,3 +7,4 @@ dependencies:
   - faith_genesis_core
   - faith_genesis_paragraphs
   - metatag
+  - scheduler

@@ -6,7 +6,11 @@ package: 'Custom'
 dependencies:
   - address
   - datetime_range
+  - entity_reference_revisions
   - field_layout
   - layout_builder
+  - media
   - menu_ui
   - path
+  - paragraphs
+  - views
