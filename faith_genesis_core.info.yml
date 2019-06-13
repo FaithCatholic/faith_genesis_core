@@ -6,7 +6,6 @@ package: 'Custom'
 dependencies:
   - address
   - datetime_range
-  - dynamic_layouts
   - entity_reference_revisions
   - field_layout
   - layout_builder
