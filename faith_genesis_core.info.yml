@@ -14,5 +14,4 @@ dependencies:
   - menu_ui
   - paragraphs
   - path
-  - simple_sitemap
   - views
