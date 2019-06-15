@@ -4,7 +4,7 @@ dependencies:
   module:
     - paragraphs_viewmode
 id: cards
-label: Cards
+label: 'Cards (multiple)'
 icon_uuid: null
 description: ''
 behavior_plugins:
@@ -18,8 +18,6 @@ behavior_plugins:
       mini: mini
       box: '0'
       deflated: '0'
-      image: '0'
-      images: '0'
       inflated: '0'
       preview: '0'
       small: '0'

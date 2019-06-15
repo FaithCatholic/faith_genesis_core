@@ -1,8 +1,24 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs_viewmode
 id: card
-label: Card
+label: 'Card (single)'
 icon_uuid: null
 description: ''
-behavior_plugins: {  }
+behavior_plugins:
+  paragraphs_viewmode_behavior:
+    enabled: true
+    override_mode: default
+    override_available:
+      default: default
+      block: block
+      box: box
+      mini: mini
+      boxes: '0'
+      deflated: '0'
+      inflated: '0'
+      preview: '0'
+      small: '0'
+    override_default: default

@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_paragraphs
+    - paragraphs.paragraphs_type.card
     - paragraphs.paragraphs_type.cards
     - paragraphs.paragraphs_type.heading
     - paragraphs.paragraphs_type.section
@@ -27,6 +28,7 @@ settings:
     negate: 0
     target_bundles:
       text: text
+      card: card
       cards: cards
       heading: heading
       subpages: subpages
@@ -39,8 +41,8 @@ settings:
         enabled: true
         weight: -15
       card:
+        enabled: true
         weight: -14
-        enabled: false
       cards:
         enabled: true
         weight: -13
