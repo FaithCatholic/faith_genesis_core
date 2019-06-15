@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: news_editor
+label: 'News editor'
+weight: 0
+is_admin: null
+permissions: {  }

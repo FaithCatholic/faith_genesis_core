@@ -7,3 +7,4 @@ dependencies:
   - crop
   - faith_genesis_core
   - file
+  - svg_image
