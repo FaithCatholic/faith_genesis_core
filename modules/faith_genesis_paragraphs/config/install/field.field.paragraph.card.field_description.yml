@@ -10,7 +10,7 @@ dependencies:
 third_party_settings:
   allowed_formats:
     simple: simple
-    full: '0'
+    full: full
     plain_text: '0'
 id: paragraph.card.field_description
 field_name: field_description
