@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Simple
+format: simple
+weight: -10
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <sup> <sub>'
+      filter_html_help: false
+      filter_html_nofollow: false
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

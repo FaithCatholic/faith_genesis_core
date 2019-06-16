@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Full
+format: full
+weight: -9
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
