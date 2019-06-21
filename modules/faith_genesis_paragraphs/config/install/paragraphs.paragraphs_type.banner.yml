@@ -13,10 +13,15 @@ behavior_plugins:
     override_mode: default
     override_available:
       default: default
+      fill_viewport: fill_viewport
       small: small
       block: '0'
       box: '0'
       boxes: '0'
+      deflated: '0'
+      image_left: '0'
+      image_right: '0'
+      inflated: '0'
       mini: '0'
       preview: '0'
     override_default: default

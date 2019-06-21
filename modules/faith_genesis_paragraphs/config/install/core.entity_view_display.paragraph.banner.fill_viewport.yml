@@ -1,0 +1,88 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.fill_viewport
+    - field.field.paragraph.banner.field_bgcolor
+    - field.field.paragraph.banner.field_bgimage
+    - field.field.paragraph.banner.field_heading
+    - field.field.paragraph.banner.field_subheading
+    - field.field.paragraph.banner.field_txtcolor
+    - paragraphs.paragraphs_type.banner
+  module:
+    - color_field
+    - field_group
+    - layout_builder
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - field_heading
+        - field_subheading
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'field-group field-group--banner-content'
+      label: Content
+      region: content
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.banner.fill_viewport
+targetEntityType: paragraph
+bundle: banner
+mode: fill_viewport
+content:
+  field_bgcolor:
+    weight: 5
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_bgimage:
+    weight: 6
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subheading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_txtcolor:
+    weight: 4
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+hidden: {  }

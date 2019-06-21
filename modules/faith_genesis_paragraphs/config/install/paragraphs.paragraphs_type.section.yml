@@ -14,12 +14,14 @@ behavior_plugins:
     override_available:
       default: default
       deflated: deflated
+      fill_viewport: fill_viewport
       inflated: inflated
       block: '0'
       box: '0'
       boxes: '0'
+      image_left: '0'
+      image_right: '0'
       mini: '0'
       preview: '0'
-      skinny: '0'
       small: '0'
     override_default: default
