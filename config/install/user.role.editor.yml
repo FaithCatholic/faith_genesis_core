@@ -2,7 +2,31 @@ langcode: en
 status: true
 dependencies: {  }
 id: editor
-label: 'Editor'
+label: Editor
 weight: 0
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer users'
+  - 'administer webform'
+  - 'create media'
+  - 'create url aliases'
+  - 'delete any media'
+  - 'delete media'
+  - 'schedule publishing of nodes'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view own unpublished media'
+  - 'view scheduled content'
+  - 'view the administration theme'
