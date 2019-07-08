@@ -1,0 +1,9 @@
+services:
+  faith_genesis_core.Hex2RgbaTwigExtension:
+    class: Drupal\faith_genesis_core\Hex2RgbaTwigExtension
+    tags:
+      - {name: twig.extension}
+  faith_genesis_core.ColorInverseTwigExtension:
+    class: Drupal\faith_genesis_core\ColorInverseTwigExtension
+    tags:
+      - {name: twig.extension}
