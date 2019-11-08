@@ -5,11 +5,14 @@ dependencies:
     - field.field.paragraph.section.field_bgcolor
     - field.field.paragraph.section.field_bgimage
     - field.field.paragraph.section.field_paragraphs
+    - field.field.paragraph.section.field_section_name
     - field.field.paragraph.section.field_txtcolor
     - paragraphs.paragraphs_type.section
   module:
     - color_field
     - entity_reference_revisions
+_core:
+  default_config_hash: EnZGUFOB6PUEsJvbcW15KAXcqUnptqqs3nTGtxEJQyU
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
@@ -51,4 +54,5 @@ content:
       format: hex
       opacity: '1'
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_section_name: true
