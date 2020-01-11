@@ -1,0 +1,360 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.school.body
+    - field.field.node.school.field_admissions_email
+    - field.field.node.school.field_box1
+    - field.field.node.school.field_box2
+    - field.field.node.school.field_box3
+    - field.field.node.school.field_box4
+    - field.field.node.school.field_building_photo
+    - field.field.node.school.field_facebook
+    - field.field.node.school.field_geofield
+    - field.field.node.school.field_grades
+    - field.field.node.school.field_grades_display
+    - field.field.node.school.field_instagram
+    - field.field.node.school.field_phone_number
+    - field.field.node.school.field_principal_email
+    - field.field.node.school.field_principal_name
+    - field.field.node.school.field_principal_picture
+    - field.field.node.school.field_principal_title
+    - field.field.node.school.field_school_address
+    - field.field.node.school.field_school_category
+    - field.field.node.school.field_school_logo
+    - field.field.node.school.field_school_type
+    - field.field.node.school.field_stat1
+    - field.field.node.school.field_stat1_icon
+    - field.field.node.school.field_stat2
+    - field.field.node.school.field_stat2_icon
+    - field.field.node.school.field_stat3
+    - field.field.node.school.field_stat3_icon
+    - field.field.node.school.field_stat4
+    - field.field.node.school.field_stat4_icon
+    - field.field.node.school.field_stat5
+    - field.field.node.school.field_stat5_icon
+    - field.field.node.school.field_stat6
+    - field.field.node.school.field_stat6_icon
+    - field.field.node.school.field_twitter
+    - field.field.node.school.field_webform
+    - field.field.node.school.field_website
+    - field.field.node.school.field_welcome_video
+    - field.field.node.school.field_youtube
+    - image.style.large
+    - node.type.school
+  module:
+    - address
+    - geofield
+    - layout_builder
+    - link
+    - svg_image
+    - telephone
+    - text
+    - user
+    - webform
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.school.default
+targetEntityType: node
+bundle: school
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_box1:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_box2:
+    type: text_default
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_box3:
+    type: text_default
+    weight: 5
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_box4:
+    type: text_default
+    weight: 6
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_building_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_facebook:
+    type: link
+    weight: 12
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_geofield:
+    type: geofield_default
+    weight: 31
+    region: content
+    label: hidden
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+  field_grades_display:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_instagram:
+    type: link
+    weight: 14
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_phone_number:
+    weight: 10
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_principal_email:
+    weight: 17
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_principal_name:
+    weight: 16
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_principal_title:
+    weight: 30
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_school_address:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_school_logo:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+      svg_render_as_image: '1'
+      svg_attributes:
+        width: ''
+        height: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_stat1:
+    type: basic_string
+    weight: 18
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat1_icon:
+    type: entity_reference_entity_view
+    weight: 19
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_stat2:
+    type: basic_string
+    weight: 20
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat2_icon:
+    type: entity_reference_entity_view
+    weight: 21
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_stat3:
+    type: basic_string
+    weight: 22
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat3_icon:
+    type: entity_reference_entity_view
+    weight: 23
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_stat4:
+    type: basic_string
+    weight: 24
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat4_icon:
+    type: entity_reference_entity_view
+    weight: 25
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_stat5:
+    type: basic_string
+    weight: 26
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat5_icon:
+    type: entity_reference_entity_view
+    weight: 27
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_stat6:
+    type: basic_string
+    weight: 28
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_stat6_icon:
+    type: entity_reference_entity_view
+    weight: 29
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_twitter:
+    type: link
+    weight: 13
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_webform:
+    type: webform_entity_reference_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+  field_website:
+    weight: 11
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_welcome_video:
+    type: entity_reference_entity_view
+    weight: 32
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_youtube:
+    type: link
+    weight: 15
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  field_admissions_email: true
+  field_contact_school_email: true
+  field_grades: true
+  field_principal_picture: true
+  field_school_category: true
+  field_school_type: true
+  links: true

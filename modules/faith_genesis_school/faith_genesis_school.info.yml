@@ -1,0 +1,19 @@
+name: 'Faith genesis school'
+type: module
+description: 'School functionality for Faith Genesis platform.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - address
+  - better_exposed_filters
+  - faith_genesis_core
+  - faith_genesis_paragraphs
+  - geocoder_field
+  - geofield
+  - leaflet_views
+  - metatag
+  - pathauto
+  - scheduler
+  - taxonomy
+  - telephone
+  - webform

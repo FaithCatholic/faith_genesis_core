@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'School type'
+vid: school_type
+description: ''
+weight: 0

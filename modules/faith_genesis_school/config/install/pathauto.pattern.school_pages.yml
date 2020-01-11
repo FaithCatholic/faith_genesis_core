@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: school_pages
+label: 'School Pages'
+type: 'canonical_entities:node'
+pattern: '[node:title]-[node:field_school_address:locality]'
+selection_criteria:
+  9f726ccb-07b7-48de-ba34-8a8d369ca610:
+    id: node_type
+    bundles:
+      school: school
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9f726ccb-07b7-48de-ba34-8a8d369ca610
+selection_logic: and
+weight: -8
+relationships: {  }

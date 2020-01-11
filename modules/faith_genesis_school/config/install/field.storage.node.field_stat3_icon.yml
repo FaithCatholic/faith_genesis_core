@@ -1,0 +1,20 @@
+uuid: 5ed67f61-4779-4a5d-b47f-c79b0bd1eab0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_stat3_icon
+field_name: field_stat3_icon
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_admissions_email
+    - node.type.school
+id: node.school.field_admissions_email
+field_name: field_admissions_email
+entity_type: node
+bundle: school
+label: 'Admissions email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

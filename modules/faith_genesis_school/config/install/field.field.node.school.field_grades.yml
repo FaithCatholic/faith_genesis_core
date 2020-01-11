@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grades
+    - node.type.school
+    - taxonomy.vocabulary.grades
+id: node.school.field_grades
+field_name: field_grades
+entity_type: node
+bundle: school
+label: Grades
+description: 'For search and sorting; not displayed.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      grades: grades
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

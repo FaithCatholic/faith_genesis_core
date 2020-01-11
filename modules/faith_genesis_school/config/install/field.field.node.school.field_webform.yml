@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_webform
+    - node.type.school
+    - webform.webform.contact_school
+  module:
+    - webform
+id: node.school.field_webform
+field_name: field_webform
+entity_type: node
+bundle: school
+label: 'Contact webform'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: null
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 8eb0f44d-ede7-46ce-9bff-730f52ecf793
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

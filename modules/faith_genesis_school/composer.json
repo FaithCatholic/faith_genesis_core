@@ -1,0 +1,14 @@
+{
+  "name": "faithcatholic/faith_gensis_school",
+  "type": "drupal-module",
+  "description": "Schools functionality for Faith Genesis platform.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/faith_genesis_school",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/faith_genesis_school",
+    "source": "http://cgit.drupalcode.org/faith_genesis_school"
+  },
+  "require": { }
+}

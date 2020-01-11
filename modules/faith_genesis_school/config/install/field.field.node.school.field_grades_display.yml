@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grades_display
+    - node.type.school
+id: node.school.field_grades_display
+field_name: field_grades_display
+entity_type: node
+bundle: school
+label: Grades
+description: 'For display.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

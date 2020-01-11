@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies: {  }
+id: node__school
+label: 'Content: School'
+tags:
+  canonical_url: '[current-page:url:absolute]'
+  description: 'A Catholic [node:field_school_type] located in [node:field_school_address:locality], [node:field_school_address:administrative_area]'
+  title: '[node:title] [node:field_school_address:locality], [node:field_school_address:administrative_area]'
+  article_modified_time: '[node:changed:custom:c]'
+  article_published_time: '[node:created:custom:c]'
+  og_country_name: '[node:field_school_address:country_name]'
+  og_description: '[node:summary]'
+  og_image: '[node:field_building_photo:entity:url]'
+  og_latitude: '[node:field_geofield:lat]'
+  og_locality: '[node:field_school_address:locality]'
+  og_longitude: '[node:field_geofield:lon]'
+  og_phone_number: '[node:field_phone_number]'
+  og_postal_code: '[node:field_school_address:postal_code]'
+  og_region: '[node:field_school_address:administrative_area]'
+  og_street_address: '[node:field_school_address:address_line1]'
+  og_title: '[node:title] in [node:field_school_address:locality], [node:field_school_address:administrative_area]'
+  og_type: website
+  og_url: '[current-page:url:absolute]'
+  schema_organization_address: 'a:6:{s:5:"@type";s:13:"PostalAddress";s:13:"streetAddress";s:41:"[node:field_school_address:address_line1]";s:15:"addressLocality";s:36:"[node:field_school_address:locality]";s:13:"addressRegion";s:47:"[node:field_school_address:administrative_area]";s:10:"postalCode";s:39:"[node:field_school_address:postal_code]";s:14:"addressCountry";s:40:"[node:field_school_address:country_name]";}'
+  schema_organization_description: 'A Catholic [node:field_school_type] located in [node:field_school_address:locality], [node:field_school_address:administrative_area] '
+  schema_organization_id: '[current-page:url:absolute]'
+  schema_organization_image: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:38:"[node:field_building_photo:entity:url]";}'
+  schema_organization_logo: 'a:2:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:35:"[node:field_school_logo:entity:url]";}'
+  schema_organization_name: '[node:title]'
+  schema_organization_telephone: '[node:field_phone_number]'
+  schema_organization_type: School
+  schema_organization_url: '[node:field_website]'

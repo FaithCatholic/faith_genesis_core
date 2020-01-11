@@ -1,0 +1,60 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.school.body
+    - node.type.school
+  module:
+    - text
+    - user
+id: node.school.teaser
+targetEntityType: node
+bundle: school
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_admissions_email: true
+  field_box1: true
+  field_box2: true
+  field_box3: true
+  field_box4: true
+  field_building_photo: true
+  field_facebook: true
+  field_geofield: true
+  field_grades: true
+  field_grades_display: true
+  field_infographic: true
+  field_instagram: true
+  field_phone_number: true
+  field_principal_email: true
+  field_principal_name: true
+  field_principal_picture: true
+  field_principal_title: true
+  field_school_address: true
+  field_school_category: true
+  field_school_logo: true
+  field_school_type: true
+  field_stat1: true
+  field_stat2: true
+  field_stat3: true
+  field_stat4: true
+  field_stat5: true
+  field_stat6: true
+  field_twitter: true
+  field_webform: true
+  field_website: true
+  field_youtube: true

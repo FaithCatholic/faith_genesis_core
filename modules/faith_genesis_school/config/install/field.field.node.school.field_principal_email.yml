@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_principal_email
+    - node.type.school
+id: node.school.field_principal_email
+field_name: field_principal_email
+entity_type: node
+bundle: school
+label: 'Principal email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,83 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_banner
+    - field.field.node.event.field_cost
+    - field.field.node.event.field_event_daterange
+    - field.field.node.event.field_geofield
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - image.style.large
+    - node.type.event
+  module:
+    - address
+    - custom_event_date
+    - geofield
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cost:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_event_daterange:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: custom_daterange_all_day_default
+    region: content
+  field_geofield:
+    weight: 7
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+  field_location:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+hidden:
+  field_banner: true
+  links: true
