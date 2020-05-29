@@ -1,0 +1,13 @@
+{
+    "name": "faith_genesis_layout",
+    "type": "drupal-module",
+    "description": "Provides customizable layouts.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/faith_genesis_layout",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/faith_genesis_layout",
+        "source": "http://cgit.drupalcode.org/faith_genesis_layout",
+    },
+}

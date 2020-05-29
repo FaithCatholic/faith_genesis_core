@@ -1,0 +1,11 @@
+/**
+ * Overrides specific layout_builder_base_library css.
+ */
+
+.layout--container--default {
+  max-width: 1170px;
+}
+
+.layout--content-container--default .layout-content {
+  max-width: 1170px;
+}

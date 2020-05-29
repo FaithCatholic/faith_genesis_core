@@ -1,0 +1,223 @@
+faith_genesis_layout_core_onecol:
+  label: Layout Core – One column
+  template: templates/faith-genesis-layout--core--onecol
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreOneColumnLayout'
+  category: Faith genesis
+  default_region: content
+  icon_map:
+    - [main]
+  regions:
+    content:
+      label: Content
+
+faith_genesis_layout_core_twocol_50_50:
+  label: Layout Core – Two column (50%/50%)
+  template: templates/faith-genesis-layout--core--twocol-section-50-50
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreTwoColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_core_twocol_33_67:
+  label: Layout Core – Two column (33%/67%)
+  template: templates/faith-genesis-layout--core--twocol-section-33-67
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreTwoColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_core_twocol_67_33:
+  label: Layout Core – Two column (67%/33%)
+  template: templates/faith-genesis-layout--core--twocol-section-67-33
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreTwoColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_core_twocol_25_75:
+  label: Layout Core – Two column (25%/75%)
+  template: templates/faith-genesis-layout--core--twocol-section-25-75
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreTwoColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_core_twocol_75_25:
+  label: Layout Core – Two column (75%/25%)
+  template: templates/faith-genesis-layout--core--twocol-section-75-25
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreTwoColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_core_threecol_25_50_25:
+  label: Layout Core – Three column (25%/50%/25%)
+  template: templates/faith-genesis-layout--core--threecol-section-25-50-25
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreThreeColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+faith_genesis_layout_core_threecol_33_34_33:
+  label: Layout Core – Three column (33%/34%/33%)
+  template: templates/faith-genesis-layout--core--threecol-section-33-34-33
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreThreeColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+faith_genesis_layout_core_threecol_25_25_50:
+  label: Layout Core – Three column (25%/25%/50%)
+  template: templates/faith-genesis-layout--core--threecol-section-25-25-50
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreThreeColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+faith_genesis_layout_core_threecol_50_25_25:
+  label: Layout Core – Three column (50%/25%/25%)
+  template: templates/faith-genesis-layout--core--threecol-section-50-25-25
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreThreeColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+faith_genesis_layout_core_fourcol:
+  label: Layout Core – Four column
+  template: templates/faith-genesis-layout--core--fourcol-section
+  category: Faith genesis
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\CoreFourColumnLayout'
+  default_region: first
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth
+
+faith_genesis_layout_base_onecol:
+  label: Layout Base - One column
+  template: templates/faith-genesis-layout--base--onecol
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\BaseOneColumnLayout'
+  category: Faith genesis
+  default_region: content
+  icon_map:
+    - [main]
+  regions:
+    content:
+      label: Content
+
+faith_genesis_layout_base_twocol:
+  label: Layout Base - Two columns
+  template: templates/faith-genesis-layout--base--twocols
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\BaseTwoColumnsLayout'
+  category: Faith genesis
+  default_region: content
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+faith_genesis_layout_base_threecol:
+  label: Layout Base - Three columns
+  template: templates/faith-genesis-layout--base--threecols
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\BaseThreeColumnsLayout'
+  category: Faith genesis
+  default_region: content
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+faith_genesis_layout_base_fourcol:
+  label: Layout Base - Four columns
+  template: templates/faith-genesis-layout--base--fourcols
+  class: '\Drupal\faith_genesis_layout\Plugin\Layout\BaseFourColumnsLayout'
+  category: Faith genesis
+  default_region: content
+  icon_map:
+    - [first, second, third, fourth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    fourth:
+      label: Fourth

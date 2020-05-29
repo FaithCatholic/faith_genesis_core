@@ -1,0 +1,38 @@
+/**
+ * This applies to all layouts, regardless of which module.
+ */
+
+.fixed-width > .layout-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .fixed-width > .layout-content {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-width > .layout-content {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fixed-width > .layout-content {
+    max-width: 1170px;
+  }
+}
+
+/**
+ * Shared styles.
+ */
+
+.layout--background--gradient-linear-top-bottom-light {
+  background: red;
+}
+
+.layout--background--gradient-linear-top-bottom-dark {
+  background: green;
+}

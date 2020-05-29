@@ -1,0 +1,30 @@
+layout:
+  version: VERSION
+  css:
+    theme:
+      css/faith-genesis-layout.css: {}
+
+base:
+  version: VERSION
+  css:
+    theme:
+      css/layout-builder-base-overrides.css: {}
+
+twocol:
+  version: VERSION
+  css:
+    theme:
+      css/twocol.css: {}
+      css/twocol_section.css: {}
+
+threecol:
+  version: VERSION
+  css:
+    theme:
+      css/threecol_section.css: {}
+
+fourcol:
+  version: VERSION
+  css:
+    theme:
+      css/fourcol_section.css: {}

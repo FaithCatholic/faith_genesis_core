@@ -1,0 +1,8 @@
+name: 'Faith genesis layout'
+type: module
+description: 'Provides customizable layouts.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:layout_builder_base
+  - drupal:layout_options

@@ -1,0 +1,60 @@
+layout_option_definitions:
+
+  layout_id:
+    title: 'Custom id'
+    description: 'The CSS identifier to use on this layout item.'
+    default: ''
+    plugin: layout_options_id
+    layout: true
+    regions: true
+    weight: -100  #optional attribute to set form location.
+    allowed_regions: [main,left,top] #optional attribute to limit regions
+
+  layout_custom_classes:
+      title: 'Custom classes'
+      description: 'Any custom classes to use with this layout item.'
+      default: ''
+      plugin: layout_options_class_string
+      layout: true
+      regions: true
+      weight: -99
+
+  layout_design_classes:
+    title: 'Layout classes'
+    description: 'The theme design classes to use with this layout item.'
+    default: ''
+    plugin: layout_options_class_checkboxes
+    inline: true
+    options:
+      fixed-width: 'Fixed width'
+      fluid-width: 'Fluid width'
+    layout: true
+    regions: true
+    weight: -98
+
+  layout_bg_color:
+    title: 'Background color'
+    description: 'The background color to use with this layout item.'
+    default: ''
+    plugin: layout_options_class_select
+    multi: false
+    options:
+      bg-info: 'Info'
+      bg-primary: 'Primary'
+      bg-secondary: 'Secondary'
+      bg-success: 'Success'
+      bg-white: 'White'
+      bg-transparent: 'Transparent'
+    layout: true
+    regions: true
+    weight: -97
+
+layout_options:
+
+  global:
+    layout_design_classes:
+      title: 'Design classes'
+    layout_custom_classes:
+      title: 'Layout classes'
+    layout_id:
+      title: 'Custom id'
