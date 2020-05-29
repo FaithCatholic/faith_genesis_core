@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference_revisions
+    - entity_reference_layout
     - node
     - paragraphs
-id: node.field_paragraphs
-field_name: field_paragraphs
+id: node.field_erl_sections
+field_name: field_erl_sections
 entity_type: node
-type: entity_reference_revisions
+type: entity_reference_layout_revisioned
 settings:
   target_type: paragraph
-module: entity_reference_revisions
+module: entity_reference_layout
 locked: false
 cardinality: -1
 translatable: true

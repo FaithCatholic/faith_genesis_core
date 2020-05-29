@@ -2,18 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.landing.field_paragraphs
+    - field.field.node.landing.field_erl_sections
     - node.type.landing
   module:
+    - entity_reference_layout
     - field_layout
     - layout_discovery
-    - paragraphs
     - path
     - scheduler
 third_party_settings:
   field_layout:
     id: layout_onecol
-    settings: {  }
+    settings:
+      label: ''
+_core:
+  default_config_hash: emY-TKgZREkA_SgTLZoclk-TB2EPEYjAedNeCXPbwq0
 id: node.landing.default
 targetEntityType: node
 bundle: landing
@@ -25,24 +28,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_paragraphs:
-    type: paragraphs
+  field_erl_sections:
     weight: 26
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: closed
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-      features:
-        duplicate: '0'
-        collapse_edit_all: '0'
-        add_above: '0'
+      always_show_options_form: false
+      preview_view_mode: default
     third_party_settings: {  }
+    type: entity_reference_layout_widget
     region: content
   path:
     type: path
@@ -92,6 +84,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
   unpublish_on:

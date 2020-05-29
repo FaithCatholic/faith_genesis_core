@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_erl_sections
+    - node.type.landing
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.cards
+    - paragraphs.paragraphs_type.erl_section
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.subpages
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_layout
+id: node.landing.field_erl_sections
+field_name: field_erl_sections
+entity_type: node
+bundle: landing
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      banner: banner
+      card: card
+      cards: cards
+      erl_section: erl_section
+      heading: heading
+      subpages: subpages
+      text: text
+      view: view
+    target_bundles_drag_drop:
+      banner:
+        enabled: '1'
+        weight: '10'
+      card:
+        enabled: '1'
+        weight: '11'
+      cards:
+        enabled: '1'
+        weight: '12'
+      erl_section:
+        enabled: '1'
+        weight: '13'
+      heading:
+        enabled: '1'
+        weight: '14'
+      section:
+        weight: '15'
+        enabled: 0
+      subpages:
+        enabled: '1'
+        weight: '16'
+      text:
+        enabled: '1'
+        weight: '17'
+      view:
+        enabled: '1'
+        weight: '18'
+    layout_bundles: erl_section
+    allowed_layouts:
+      'Faith genesis':
+        faith_genesis_layout_base_fourcol: 'Layout Base - Four columns'
+        faith_genesis_layout_base_onecol: 'Layout Base - One column'
+        faith_genesis_layout_base_threecol: 'Layout Base - Three columns'
+        faith_genesis_layout_base_twocol: 'Layout Base - Two columns'
+        faith_genesis_layout_core_fourcol: 'Layout Core – Four column'
+        faith_genesis_layout_core_threecol_25_25_50: 'Layout Core – Three column (25%/25%/50%)'
+        faith_genesis_layout_core_threecol_25_50_25: 'Layout Core – Three column (25%/50%/25%)'
+        faith_genesis_layout_core_threecol_33_34_33: 'Layout Core – Three column (33%/34%/33%)'
+        faith_genesis_layout_core_threecol_50_25_25: 'Layout Core – Three column (50%/25%/25%)'
+        faith_genesis_layout_core_twocol_25_75: 'Layout Core – Two column (25%/75%)'
+        faith_genesis_layout_core_twocol_33_67: 'Layout Core – Two column (33%/67%)'
+        faith_genesis_layout_core_twocol_50_50: 'Layout Core – Two column (50%/50%)'
+        faith_genesis_layout_core_twocol_67_33: 'Layout Core – Two column (67%/33%)'
+        faith_genesis_layout_core_twocol_75_25: 'Layout Core – Two column (75%/25%)'
+        faith_genesis_layout_core_onecol: 'Layout Core – One column'
+field_type: entity_reference_layout_revisioned

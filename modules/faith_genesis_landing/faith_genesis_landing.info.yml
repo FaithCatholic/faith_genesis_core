@@ -4,7 +4,12 @@ description: 'Landing functionality for Faith Genesis platform.'
 core: 8.x
 package: 'Custom'
 dependencies:
+  - entity_reference_layout
+  - erl_paragraphs
   - faith_genesis_core
+  - faith_genesis_layout
   - faith_genesis_paragraphs
+  - layout_builder_base
+  - layout_builder_base_library
   - metatag
   - scheduler

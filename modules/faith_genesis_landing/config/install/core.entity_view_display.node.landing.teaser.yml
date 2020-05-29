@@ -3,10 +3,12 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.landing.field_paragraphs
+    - field.field.node.landing.field_erl_sections
     - node.type.landing
   module:
     - user
+_core:
+  default_config_hash: mPfGcruSphvPahTXR62oB_ZHhvJ1c_mm1nm7Frr-yWY
 id: node.landing.teaser
 targetEntityType: node
 bundle: landing
@@ -18,4 +20,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_paragraphs: true
+  field_erl_sections: true
