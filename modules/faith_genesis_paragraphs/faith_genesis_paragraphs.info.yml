@@ -1,7 +1,7 @@
 name: 'Faith genesis paragraphs'
 type: module
 description: 'Provides various paragraph types.'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Custom'
 dependencies:
   - allowed_formats
