@@ -1,7 +1,7 @@
 name: 'Faith genesis core'
 type: module
 description: 'Core functionality for Faith Genesis platform.'
-core: ^8 || ^9
+core_version_requirement: ^8 || ^9
 package: 'Custom'
 dependencies:
   - address
