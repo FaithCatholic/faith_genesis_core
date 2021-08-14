@@ -4,5 +4,4 @@ description: 'Provides customizable layouts.'
 core_version_requirement: ^8 || ^9
 package: 'Custom'
 dependencies:
-  - drupal:layout_builder_base
-  - drupal:layout_options
+  - layout_builder
