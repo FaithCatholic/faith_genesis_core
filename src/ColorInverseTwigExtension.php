@@ -23,7 +23,7 @@ class ColorInverseTwigExtension extends \Twig\Extension\AbstractExtension {
    */
   public function getFunctions() {
     return array(
-      new \Twig_SimpleFunction('color_inverse', array($this, 'color_inverse'), array('is_safe' => array('raw'))),
+      new \Twig\TwigFunction('color_inverse', array($this, 'color_inverse'), array('is_safe' => array('raw'))),
     );
   }
 

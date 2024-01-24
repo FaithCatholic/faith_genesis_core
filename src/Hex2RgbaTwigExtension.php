@@ -23,7 +23,7 @@ class Hex2RgbaTwigExtension extends \Twig\Extension\AbstractExtension {
    */
   public function getFunctions() {
     return array(
-      new \Twig_SimpleFunction('hex2rgba', array($this, 'hex2rgba'), array('is_safe' => array('raw'))),
+      new \Twig\TwigFunction('hex2rgba', array($this, 'hex2rgba'), array('is_safe' => array('raw'))),
     );
   }
 
