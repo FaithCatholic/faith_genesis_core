@@ -1,7 +1,7 @@
 name: 'Faith genesis landing'
 type: module
 description: 'Landing functionality for Faith Genesis platform.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Custom'
 dependencies:
   - faith_genesis_core

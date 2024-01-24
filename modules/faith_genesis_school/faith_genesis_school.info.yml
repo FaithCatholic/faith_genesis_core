@@ -1,7 +1,7 @@
 name: 'Faith genesis school'
 type: module
 description: 'School functionality for Faith Genesis platform.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: 'Custom'
 dependencies:
   - address
