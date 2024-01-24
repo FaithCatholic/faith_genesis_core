@@ -7,7 +7,7 @@ namespace Drupal\faith_genesis_core;
  *
  * @package Drupal\faith_genesis_core
  */
-class Hex2RgbaTwigExtension extends \Twig_Extension {
+class Hex2RgbaTwigExtension extends \Twig\Extension\AbstractExtension {
 
   /**
    * {@inheritdoc}

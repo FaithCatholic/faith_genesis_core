@@ -7,7 +7,7 @@ namespace Drupal\faith_genesis_core;
  *
  * @package Drupal\faith_genesis_core
  */
-class ColorInverseTwigExtension extends \Twig_Extension {
+class ColorInverseTwigExtension extends \Twig\Extension\AbstractExtension {
 
   /**
    * {@inheritdoc}
